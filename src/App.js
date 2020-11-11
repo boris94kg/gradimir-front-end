@@ -1,10 +1,13 @@
-import './App.css';
+import React from "react";
+import "./App.css";
+import Container from "@material-ui/core/Container";
+import Header from "./components/Header/Header";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello world</h1>
-    </div>
+    <Container maxWidth disableGutters>
+      <Header />
+    </Container>
   );
 }
 
