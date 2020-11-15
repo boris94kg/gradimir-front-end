@@ -54,6 +54,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     padding: theme.spacing(0, 1),
     // necessary for content to be below app bar
+    paddingBottom: 0,
     ...theme.mixins.toolbar,
     justifyContent: "flex-start",
   },
@@ -65,6 +66,7 @@ const useStyles = makeStyles((theme) => ({
       duration: theme.transitions.duration.leavingScreen,
     }),
     marginRight: -drawerWidth,
+    padding: 0,
   },
   contentShift: {
     transition: theme.transitions.create("margin", {
@@ -80,13 +82,9 @@ export default function PersistentDrawerRight() {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
 
-  const handleDrawerOpen = () => {
-    setOpen(true);
-  };
+  const handleDrawerOpen = () => setOpen(true);
 
-  const handleDrawerClose = () => {
-    setOpen(false);
-  };
+  const handleDrawerClose = () => setOpen(false);
 
   return (
     <div className={classes.root}>
