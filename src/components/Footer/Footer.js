@@ -5,6 +5,7 @@ import Box from "@material-ui/core/Box";
 const FooterHolder = styled.div`
   position: relative;
   width: 100%;
+  margin-top: auto;
 `;
 
 const Footer = styled.footer`

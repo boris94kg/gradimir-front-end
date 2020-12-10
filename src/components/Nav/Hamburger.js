@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import clsx from "clsx";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
@@ -135,21 +136,21 @@ export default function PersistentDrawerRight() {
         </div>
         <Divider />
         <List>
-          {[
-            "Profil radnika",
-            "Profil poslodavca",
-            "Haus majstori",
-            "O nama",
-            "Kontakt",
-          ].map((text, index) => (
-            <ListItem button key={text}>
-              {/* If we want icons we need to use ListItemIcon */}
-              {/* <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon> */}
-              <ListItemText primary={text} />
-            </ListItem>
-          ))}
+          <ListItem component={Link} to="/login">
+            Profil radnika
+          </ListItem>
+          <ListItem component={Link} to="/profil-poslodavca">
+            Profil Poslodavca
+          </ListItem>
+          <ListItem component={Link} to="/haus-majstori">
+            Haus Majstori
+          </ListItem>
+          <ListItem component={Link} to="/o-nama">
+            O nama
+          </ListItem>
+          <ListItem component={Link} to="/kontakt">
+            Kontakt
+          </ListItem>
         </List>
         {/* <Divider /> */}
       </Drawer>
