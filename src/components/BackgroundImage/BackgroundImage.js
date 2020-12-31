@@ -30,7 +30,7 @@ const BackgroundImage = () => {
         alignItems="center"
         direction="column"
       >
-        <Grid item xs={1} />
+        <Grid item xs={1} sm={1} />
         <Grid item xs={10}>
           <Typography align="center" variant="h3">
             Gradimir je...
@@ -44,15 +44,7 @@ const BackgroundImage = () => {
             laborum, placeat optio? Laudantium cum natus nam inventore molestiae
             dolore, amet dignissimos veniam quisquam. Eveniet beatae tempore
             accusamus ratione explicabo repellendus veritatis, pariatur ab non
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
-            tenetur! Eum expedita error deleniti tenetur cum perspiciatis
-            placeat impedit a quis magni, nisi officiis. Excepturi asperiores
-            quasi minima ullam eaque dolorem velit saepe nesciunt veritatis
-            harum molestiae quas aspernatur, architecto nihil sed minus officiis
-            laborum, placeat optio? Laudantium cum natus nam inventore molestiae
-            dolore, amet dignissimos veniam quisquam. Eveniet beatae tempore
-            accusamus ratione explicabo repellendus veritatis, pariatur ab non
-            tenetur!
+            Lorem ipsum dolor sit amet consect tenetur!
           </Box>
         </Grid>
         <Grid item xs={1} />
